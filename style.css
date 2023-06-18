@@ -1,0 +1,66 @@
+body {
+    background-image: linear-gradient(to bottom right, #ff0000, #0000ff);
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #f3f3f3;
+    border-radius: 5px;
+    background-color: #820b86;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+ 
+
+  #toggle-password,
+#OwAlee {
+  display: inline-block;
+  background-color: #800b84;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 6px;
+  border: 2px solid #f3f3f3;
+  width: 300px;
+  
+}
+   
+  .login-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #800b84;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #f3f3f3;
+    border-radius: 15px;
+  }
+  
