@@ -1,28 +1,30 @@
 body {
-    background-image: linear-gradient(to bottom right, #ff0000, #0000ff);
+    background-image: url(background-site.jpeg); 
     background-position: center center;
     background-attachment: fixed;
     
 }
 
 .login-container {
-    width: 300px;
+    width: 400px;
     padding: 20px;
     border: 5px solid #f3f3f3;
     border-radius: 5px;
-    background-color: #820b86;
+    backdrop-filter: blur(0.9px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
+    box-shadow: 20px 20px 20px  rgba(100, 100, 100, 100)
   }
   
   
   h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .login-container form {
