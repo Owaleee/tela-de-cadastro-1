@@ -16,22 +16,31 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
-    box-shadow: 20px 20px 20px  rgba(100, 100, 100, 100)
+    box-shadow: -20px 20px 5px rgba(0, 0, 0, 0.5);
   }
   
   
   h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(238, 229, 229);
+    text-shadow: -3px 5px 0.5px rgba(0, 0, 0, 0.5);
+
+  }
+
+  .login-container input[type="submit"]{
+    width: 400px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
   }
   
   .login-container form {
     display: flex;
     flex-direction: column;
+     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0)
   }
-  
+  .login-container input[type="email"],
   .login-container input[type="text"],
   .login-container input[type="password"] {
     margin-bottom: 10px;
@@ -39,19 +48,37 @@ body {
     border-radius: 3px;
     border: 1px solid #ccc;
     border-radius: 15px;
+    box-shadow: -10px 10px 10px  rgba(0, 0, 0, 0);
+
   }
  
 
-  #toggle-password,
+  #toggle-password{
+    display: inline-block;
+    background-color: #4f4c4f;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 6px;
+    border: 2px solid #f3f3f3;
+    width: 100px;
+  }
+
 #OwAlee {
   display: inline-block;
-  background-color: #800b84;
+  background-color: #524e53;
   padding: 2px 4px;
   cursor: pointer;
   border-radius: 15px;
   margin-bottom: 6px;
   border: 2px solid #f3f3f3;
-  width: 300px;
+  width: 150px;
+  position: absolute;
+  top: 170%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+
+  
   
 }
    
@@ -59,10 +86,14 @@ body {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #800b84;
+    background-color: #4e4b4e;
     color: white;
     cursor: pointer;
     border: 2px solid #f3f3f3;
     border-radius: 15px;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -20px 30px 1px  rgba(0, 0, 0, 0)
+
+
   }
   
