@@ -33,6 +33,9 @@ body {
     border-radius: 20px;
     padding: 5px;
     cursor: pointer;
+    margin-top: 30px;
+    position: relative;
+top: 20px;
   }
   
   .login-container form {
@@ -59,9 +62,12 @@ body {
     padding: 2px 4px;
     cursor: pointer;
     border-radius: 15px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     border: 2px solid #f3f3f3;
     width: 100px;
+    position: relative;
+bottom: 60px;
+
   }
 
 #OwAlee {
