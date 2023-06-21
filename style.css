@@ -1,105 +1,100 @@
 body {
-    background-image: url(background-site.jpeg); 
-    background-position: center center;
-    background-attachment: fixed;
-    
+  background-image: url(background-site.jpeg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .login-container {
-    width: 400px;
-    padding: 20px;
-    border: 5px solid #f3f3f3;
-    border-radius: 5px;
-    backdrop-filter: blur(0.9px);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    box-shadow: -20px 20px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  
-  h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(238, 229, 229);
-    text-shadow: -3px 5px 0.5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(45, 44, 44, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5);
+}
 
-  }
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(240, 240, 244);
+  /* codigo de contorno das letras alternativo */
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
 
-  .login-container input[type="submit"]{
-    width: 400px;
-    border-radius: 20px;
-    padding: 5px;
-    cursor: pointer;
-    margin-top: 30px;
-    position: relative;
-top: 20px;
-  }
-  
-  .login-container form {
-    display: flex;
-    flex-direction: column;
-     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0)
-  }
-  .login-container input[type="email"],
-  .login-container input[type="text"],
-  .login-container input[type="password"] {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-shadow: -10px 10px 10px  rgba(0, 0, 0, 0);
+.login-container input[type="submit"] {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  margin-top: 30px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(5, 238, 9, 0.5);
+}
 
-  }
- 
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
+}
+/* entrada de texto e calunas */
+.login-container input[type="email"],
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0);
+}
 
-  #toggle-password{
-    display: inline-block;
-    background-color: #4f4c4f;
-    padding: 2px 4px;
-    cursor: pointer;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    border: 2px solid #f3f3f3;
-    width: 100px;
-    position: relative;
-bottom: 60px;
-
-  }
+#toggle-password {
+color: red;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 60px;
+  color: white;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
 
 #OwAlee {
   display: inline-block;
-  background-color: #524e53;
-  padding: 2px 4px;
   cursor: pointer;
-  border-radius: 15px;
   margin-bottom: 6px;
-  border: 2px solid #f3f3f3;
-  width: 150px;
+  color: white;
+  max-width: 150px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
   position: absolute;
-  top: 170%;
+  /*calculo de espaçamento */
+  top: calc(100% + 20px);
   left: 50%;
-    transform: translate(-50%, -50%);
-
-  
-  
+  transform: translateX(-50%);
 }
-   
-  .login-container button {
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #4e4b4e;
-    color: white;
-    cursor: pointer;
-    border: 2px solid #f3f3f3;
-    border-radius: 15px;
-    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
-    box-shadow: -20px 30px 1px  rgba(0, 0, 0, 0)
 
+.login-container button {
+  border: none;
+  cursor: pointer;
+}
 
+@media only screen and (max-width: 600px) {
+  .login-container {
+    width: 90%;
+    max-width: none;
   }
-  
+
+  #OwAlee {
+    top: calc(100% + 10px);
+  }
+}
+
+
+
