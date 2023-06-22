@@ -38,8 +38,8 @@ h2 {
   margin-top: 30px;
   border: 2px solid white;
   color: white;
-  background-color: rgba(5, 238, 9, 0.2);
-  transition: transform 0.3s ease;
+  background-color: rgba(238, 102, 5, 0.298);
+  transition: transform 0.3s ease-out;
 }
 
 .login-container input[type="submit"]:hover {
@@ -82,9 +82,21 @@ h2 {
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 #toggle-password:hover {
-  color: rgb(19, 115, 44);
+  color: rgba(238, 102, 5, 0.836);
+}
+.Slogin{
+ color: white;
+cursor: pointer;
+position: absolute;
+top: calc(100% + -28px);
+left: 50%;
+transform: translateX(-50%);
+text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 
+.Slogin:hover {
+  color: rgb(238, 102, 5, 0.836);
+}
 
 #OwAlee {
   display: inline-block;
@@ -94,15 +106,18 @@ h2 {
   max-width: 150px;
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
   position: absolute;
-  /*calculo de espaçamento */
+  /* cálculo de espaçamento */
   top: calc(100% + 20px);
   left: 50%;
   transform: translateX(-50%);
+  transition: color 0.8s ease-in, transform 0.3s ease-in-out;
 }
 
 #OwAlee:hover {
-  color: rgb(25, 108, 47);
+  color: rgb(238, 102, 5, 0.836);
+  transform: translateX(-50%) scale(1.1);
 }
+
 
 .login-container button {
   border: none;
