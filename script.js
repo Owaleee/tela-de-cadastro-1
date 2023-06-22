@@ -3,7 +3,7 @@ const togglePassword = document.getElementById("toggle-password");
 
 //ocultar e exibir a senha 
 
-togglePassword.addEventListener("click", function() {
+togglePassword.addEventListener("click", function () {
   if (passwordField.type === "password") {
     passwordField.type = "text";
     togglePassword.textContent = "Ocultar senha";
@@ -20,5 +20,5 @@ togglePassword.addEventListener("click", function() {
 //Função para direcionar a partir do click
 
 function redirecionar() {
-    window.location.href = "https://linktr.ee/owalee";
-  }
+  window.location.href = "https://linktr.ee/owalee";
+}
