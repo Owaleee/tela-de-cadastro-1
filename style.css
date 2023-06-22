@@ -10,9 +10,10 @@ body {
 .login-container {
   width: 90%;
   max-width: 400px;
+  border-radius: 8px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgba(45, 44, 44, 0.8);
+  background-color: rgba(45, 44, 44, 0.7);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,7 +44,7 @@ h2 {
 
 .login-container input[type="submit"]:hover {
   transform: scale(1.07);
-  transition-duration: 0, 3s;
+  transition-duration: 0.8s;
 }
 
 
@@ -51,7 +52,7 @@ h2 {
 .login-container form {
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
+
 }
 
 /* entrada de texto e calunas */
@@ -60,15 +61,16 @@ h2 {
 .login-container input[type="password"] {
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 1px solid #ccc;
-  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.8);
+
 }
 
 .login-container input[type="email"]:valid,
 .login-container input[type="text"]:valid,
 .login-container input[type="password"]:valid {
-  color: green;
+  color: rgb(20, 143, 28);
 }
 
 #toggle-password {
@@ -80,7 +82,7 @@ h2 {
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 #toggle-password:hover {
-  color: rgb(8, 246, 72);
+  color: rgb(19, 115, 44);
 }
 
 
@@ -99,7 +101,7 @@ h2 {
 }
 
 #OwAlee:hover {
-  color: rgb(8, 246, 72);
+  color: rgb(25, 108, 47);
 }
 
 .login-container button {
